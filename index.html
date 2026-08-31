@@ -330,6 +330,7 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="#overview" class="tab-link active" data-page="overview">Overview</a>
       <a href="#projects" class="tab-link" data-page="projects">Projects</a>
+      <a href="#webdev" class="tab-link" data-page="webdev">Web Dev</a>
       <a href="#about" class="tab-link" data-page="about">About</a>
       <a href="#contact" class="tab-link" data-page="contact">Contact</a>
     </nav>
@@ -399,6 +400,55 @@
             <img src="./assets/images/bday.png" height="200" alt="birthday invite project preview" />
             <a href="./public/bday.html" class="card-link">View Project →</a>
           </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Web Dev page (projects, tech, links) -->
+    <section id="webdev" class="page">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Web Development</h2>
+            <p>Detailed web development work: project structure, technologies used, and links to live demos and source code.</p>
+          </div>
+          <div class="pill-list">
+            <span class="pill pill--primary">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Responsive</span>
+            <span class="pill">Accessibility</span>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Movie Ranking (Web)</h3>
+            <p>Semantic HTML project with organized content and accessible markup. Includes images and linked project page.</p>
+            <img src="./assets/images/movie rank.png" alt="movie project preview" />
+            <p class="card-link"><a href="./public/movie.html">Open project page →</a></p>
+            <p style="color:var(--color-text-muted);">Tech: HTML, basic CSS, responsive images</p>
+          </div>
+
+          <div class="card">
+            <h3>Birthday Invite (Web)</h3>
+            <p>Event page demonstrating layout, imagery, and external links (maps). Lightweight and mobile-friendly.</p>
+            <img src="./assets/images/bday.png" alt="birthday project preview" />
+            <p class="card-link"><a href="./public/bday.html">Open project page →</a></p>
+            <p style="color:var(--color-text-muted);">Tech: HTML, external image CDN, accessible links</p>
+          </div>
+
+          <div class="card">
+            <h3>Source & Deployment</h3>
+            <p>The site is version-controlled on GitHub and deployable via GitHub Pages or modern hosts (Vercel/Netlify).</p>
+            <p class="card-link"><a href="https://github.com/User-ux-lab/Html-portfolio">View repository →</a></p>
+            <p style="color:var(--color-text-muted);">Tips: Use descriptive alt text, semantic tags, and viewport meta for accessibility and SEO.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>How it’s built</h3>
+          <p style="color:var(--color-text-muted);">This portfolio uses a component-style layout with cards, responsive grids, and CSS variables for consistent theming. The Web Dev page gathers practical examples and links to the original project pages kept under <code>public/</code>.</p>
         </div>
       </section>
     </section>
