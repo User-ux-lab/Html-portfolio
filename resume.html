@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Resume & Professional Experience | Digital Marketing Specialist with expertise in SEO, social media management, and content strategy. View full work history and certifications." />
+  <meta name="keywords" content="digital marketing resume, professional experience, SEO specialist, social media manager, content strategy, marketing certifications, Google Analytics" />
+  <meta name="author" content="Shayne Oliveira" />
+  <meta property="og:title" content="Professional Resume | Experience & Certifications | Shayne Oliveira" />
+  <meta property="og:description" content="Detailed professional background in digital marketing, social media strategy, SEO optimization, and content creation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://user-ux-lab.github.io/Html-portfolio/resume.html" />
+  <title>Resume & Experience | Digital Marketing Professional | Shayne Oliveira</title>
+  <link rel="canonical" href="https://user-ux-lab.github.io/Html-portfolio/resume.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+
+      --color-bg: #05070b;
+      --color-surface: #0c1017;
+      --color-surface-2: #151b25;
+      --color-border: #293244;
+      --color-text: #e3ecff;
+      --color-text-muted: #92a0b8;
+      --color-primary: #34d3ff;
+      --color-primary-hover: #1ca7d1;
+      --color-primary-soft: rgba(52, 211, 255, 0.15);
+      --color-purple: #280137;
+      --color-purple-soft: rgba(40, 1, 55, 0.3);
+
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.55);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { text-size-adjust: none; scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      font-family: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: var(--text-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: radial-gradient(circle at top left, #202a3b 0, #280137 40%, #05070b 80%, #020308 100%);
+    }
+
+    a, button { font: inherit; color: inherit; text-decoration: none; border: none; background: none; cursor: pointer; transition: 160ms ease; }
+
+    header {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: var(--space-4) var(--space-4) 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo { display: flex; align-items: center; gap: var(--space-3); }
+    .logo a { display: flex; align-items: center; gap: var(--space-3); color: inherit; text-decoration: none; }
+    .logo-mark {
+      width: 32px; height: 32px; border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+      box-shadow: 0 0 20px rgba(52, 211, 255, 0.3);
+    }
+    .logo-type-title { font-weight: 600; font-size: var(--text-lg); letter-spacing: -0.02em; }
+    .logo-type-subtitle { font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    .nav-links { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+    .nav-link {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-md);
+      transition: all 160ms ease;
+    }
+    .nav-link:hover { color: var(--color-primary); }
+    .nav-link.active { color: var(--color-primary); background: var(--color-primary-soft); }
+
+    .page-shell { max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4); }
+
+    .page-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-6);
+    }
+
+    .section { margin-bottom: var(--space-12); }
+    .section-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: var(--text-xl);
+      color: var(--color-primary);
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid rgba(52, 211, 255, 0.3);
+    }
+
+    .experience-item {
+      margin-bottom: var(--space-8);
+      padding-bottom: var(--space-6);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .experience-item:last-child { border-bottom: none; }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--space-4);
+      margin-bottom: var(--space-2);
+      flex-wrap: wrap;
+    }
+
+    .job-title { font-weight: 600; font-size: var(--text-lg); }
+    .job-company { color: var(--color-primary); font-weight: 500; }
+    .job-date {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      white-space: nowrap;
+    }
+
+    .job-description {
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-top: var(--space-3);
+    }
+
+    .job-responsibilities {
+      margin-top: var(--space-3);
+      padding-left: var(--space-4);
+    }
+
+    .job-responsibilities li {
+      margin-bottom: var(--space-2);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    .certification {
+      padding: var(--space-4);
+      background: rgba(12, 16, 23, 0.4);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-3);
+    }
+
+    .certification-name { font-weight: 600; margin-bottom: var(--space-2); }
+    .certification-issuer { font-size: var(--text-sm); color: var(--color-text-muted); }
+
+    .skill-pills { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-4); }
+    .skill-pill {
+      padding: var(--space-2) var(--space-4);
+      background: rgba(52, 211, 255, 0.1);
+      border: 1px solid rgba(52, 211, 255, 0.3);
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    footer {
+      max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4) var(--space-4);
+      font-size: var(--text-xs); color: var(--color-text-muted); display: flex; justify-content: space-between;
+      gap: var(--space-4); border-top: 1px solid rgba(147,160,184,.35); margin-top: var(--space-12);
+    }
+    .footer-links { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      .page-shell { padding-inline: var(--space-4); }
+      header, footer { flex-direction: column; align-items: flex-start; }
+      .job-header { flex-direction: column; }
+    }
+    @media (max-width: 600px) {
+      .page-shell { padding-inline: var(--space-3); }
+      .nav-links { gap: var(--space-2); }
+      .nav-link { font-size: var(--text-xs); padding: var(--space-2); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-type-title">Shayne Oliveira</div>
+          <div class="logo-type-subtitle">Digital Marketing</div>
+        </div>
+      </a>
+    </div>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/" class="nav-link">Overview</a>
+      <a href="marketing.html" class="nav-link">Marketing</a>
+      <a href="resume.html" class="nav-link active">Resume</a>
+      <a href="webdev.html" class="nav-link">Web Dev</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <h1 class="page-title">Professional Experience</h1>
+
+    <section class="section">
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Marketing Specialist</div>
+            <div class="job-company">Digital Marketing Agency</div>
+          </div>
+          <div class="job-date">2021 - Present</div>
+        </div>
+        <p class="job-description">Lead digital marketing campaigns and social media strategies for diverse client portfolio. Manage social media accounts, develop content strategies, and optimize SEO performance to drive organic growth and engagement.</p>
+        <ul class="job-responsibilities">
+          <li>Developed and executed comprehensive social media strategies across Instagram, TikTok, Facebook, and LinkedIn</li>
+          <li>Created high-performing content calendar and managed daily social media operations</li>
+          <li>Optimized website SEO and improved organic traffic by 40%+ through keyword research and on-page optimization</li>
+          <li>Managed paid social campaigns with average ROI of 3.5x</li>
+          <li>Analyzed performance metrics using Google Analytics and created monthly reporting dashboards</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Social Media Manager</div>
+            <div class="job-company">E-commerce Brand</div>
+          </div>
+          <div class="job-date">2019 - 2021</div>
+        </div>
+        <p class="job-description">Managed all social media channels and community engagement for fast-growing e-commerce brand. Created viral content, managed influencer partnerships, and drove customer acquisition through social channels.</p>
+        <ul class="job-responsibilities">
+          <li>Grew Instagram following from 5K to 50K+ through strategic content and engagement</li>
+          <li>Executed TikTok strategy resulting in 2M+ views and 100K+ followers</li>
+          <li>Managed influencer partnerships and brand collaborations</li>
+          <li>Optimized product listings and created SEO-friendly descriptions</li>
+          <li>Achieved 15% average engagement rate across all platforms</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Content Creator & Marketing Consultant</div>
+            <div class="job-company">Freelance</div>
+          </div>
+          <div class="job-date">2018 - Present</div>
+        </div>
+        <p class="job-description">Independent contractor providing marketing consulting, content creation, and social media management services to startups and small businesses.</p>
+        <ul class="job-responsibilities">
+          <li>Developed marketing strategies and social media roadmaps for 20+ clients</li>
+          <li>Created engaging video content, graphics, and copy for multiple industries</li>
+          <li>Conducted SEO audits and implemented optimization recommendations</li>
+          <li>Managed paid advertising campaigns across Facebook, Instagram, and Google</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Bachelor of Commerce</div>
+            <div class="job-company">University</div>
+          </div>
+          <div class="job-date">Graduated 2018</div>
+        </div>
+        <p class="job-description">Focus on Business Administration and Marketing. Completed coursework in consumer behavior, market research, and digital communications.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Certifications & Training</h2>
+
+      <div class="certification">
+        <div class="certification-name">Google Analytics Certified Professional</div>
+        <div class="certification-issuer">Google Academy for Ads</div>
+      </div>
+
+      <div class="certification">
+        <div class="certification-name">HubSpot Inbound Marketing Certification</div>
+        <div class="certification-issuer">HubSpot Academy</div>
+      </div>
+
+      <div class="certification">
+        <div class="certification-name">Meta Social Media Marketing Professional Certificate</div>
+        <div class="certification-issuer">Meta Blueprint</div>
+      </div>
+
+      <div class="certification">
+        <div class="certification-name">SEMrush SEO Fundamentals Certification</div>
+        <div class="certification-issuer">SEMrush Academy</div>
+      </div>
+
+      <div class="certification">
+        <div class="certification-name">Content Marketing Institute Certification</div>
+        <div class="certification-issuer">Content Marketing Institute</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Core Skills & Expertise</h2>
+      <div class="skill-pills">
+        <span class="skill-pill">Social Media Strategy</span>
+        <span class="skill-pill">SEO Optimization</span>
+        <span class="skill-pill">Content Creation</span>
+        <span class="skill-pill">Google Analytics</span>
+        <span class="skill-pill">Paid Advertising</span>
+        <span class="skill-pill">Copywriting</span>
+        <span class="skill-pill">Video Production</span>
+        <span class="skill-pill">Email Marketing</span>
+        <span class="skill-pill">Brand Strategy</span>
+        <span class="skill-pill">Data Analysis</span>
+        <span class="skill-pill">Influencer Marketing</span>
+        <span class="skill-pill">Community Management</span>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div>&copy; 2024 Shayne Oliveira | Digital Marketing Specialist & SEO Consultant. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="marketing.html">Marketing</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      const href = link.getAttribute('href');
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      if ((href === '/' && (currentPage === '' || currentPage === 'index.html')) || href === currentPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

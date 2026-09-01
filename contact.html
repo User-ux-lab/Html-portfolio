@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Shayne Oliveira | Get in touch for digital marketing services, social media strategy, or SEO consulting. Available for freelance projects and collaborations." />
+  <meta name="keywords" content="contact marketing specialist, hire digital marketer, social media consultant, SEO services contact, freelance marketing" />
+  <meta name="author" content="Shayne Oliveira" />
+  <meta property="og:title" content="Contact Me | Get in Touch | Shayne Oliveira" />
+  <meta property="og:description" content="Reach out to discuss your digital marketing needs, SEO strategy, or social media services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://user-ux-lab.github.io/Html-portfolio/contact.html" />
+  <title>Contact Me | Digital Marketing Specialist | Shayne Oliveira</title>
+  <link rel="canonical" href="https://user-ux-lab.github.io/Html-portfolio/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+
+      --color-bg: #05070b;
+      --color-surface: #0c1017;
+      --color-surface-2: #151b25;
+      --color-border: #293244;
+      --color-text: #e3ecff;
+      --color-text-muted: #92a0b8;
+      --color-primary: #34d3ff;
+      --color-primary-hover: #1ca7d1;
+      --color-primary-soft: rgba(52, 211, 255, 0.15);
+      --color-purple: #280137;
+      --color-purple-soft: rgba(40, 1, 55, 0.3);
+
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.55);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { text-size-adjust: none; scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      font-family: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: var(--text-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: radial-gradient(circle at top left, #202a3b 0, #280137 40%, #05070b 80%, #020308 100%);
+    }
+
+    a, button { font: inherit; color: inherit; text-decoration: none; border: none; background: none; cursor: pointer; transition: 160ms ease; }
+
+    header {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: var(--space-4) var(--space-4) 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo { display: flex; align-items: center; gap: var(--space-3); }
+    .logo a { display: flex; align-items: center; gap: var(--space-3); color: inherit; text-decoration: none; }
+    .logo-mark {
+      width: 32px; height: 32px; border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+      box-shadow: 0 0 20px rgba(52, 211, 255, 0.3);
+    }
+    .logo-type-title { font-weight: 600; font-size: var(--text-lg); letter-spacing: -0.02em; }
+    .logo-type-subtitle { font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    .nav-links { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+    .nav-link {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-md);
+      transition: all 160ms ease;
+    }
+    .nav-link:hover { color: var(--color-primary); }
+    .nav-link.active { color: var(--color-primary); background: var(--color-primary-soft); }
+
+    .page-shell { max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4); }
+
+    .page-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-6);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: var(--space-8);
+      margin-bottom: var(--space-12);
+    }
+
+    .contact-info h2 {
+      font-family: 'Instrument Serif', serif;
+      font-size: var(--text-xl);
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .contact-method {
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-6);
+      border-bottom: 1px solid rgba(147, 160, 184, 0.2);
+    }
+
+    .contact-method:last-child { border-bottom: none; }
+
+    .contact-label {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: var(--space-2);
+    }
+
+    .contact-value {
+      font-weight: 600;
+      font-size: var(--text-lg);
+      color: var(--color-primary);
+    }
+
+    .contact-value a {
+      transition: all 160ms ease;
+    }
+
+    .contact-value a:hover {
+      color: var(--color-primary-hover);
+      text-decoration: underline;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+
+    .form-group { display: flex; flex-direction: column; gap: var(--space-2); }
+    .form-label {
+      font-weight: 500;
+      font-size: var(--text-sm);
+      color: var(--color-text);
+    }
+
+    .form-input, .form-textarea {
+      padding: 0.75rem 1rem;
+      background: rgba(12, 16, 23, 0.6);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      color: var(--color-text);
+      font-family: inherit;
+      font-size: var(--text-base);
+      transition: all 160ms ease;
+    }
+
+    .form-input::placeholder, .form-textarea::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      background: rgba(52, 211, 255, 0.05);
+      box-shadow: 0 0 0 3px var(--color-primary-soft);
+    }
+
+    .form-textarea { resize: vertical; min-height: 150px; }
+
+    .btn-submit {
+      padding: 0.75rem 1.5rem;
+      background: var(--color-primary);
+      color: var(--color-bg);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: var(--text-base);
+      box-shadow: 0 0 20px rgba(52, 211, 255, 0.3);
+      cursor: pointer;
+      transition: all 160ms ease;
+    }
+
+    .btn-submit:hover {
+      background: var(--color-primary-hover);
+      box-shadow: 0 0 30px rgba(52, 211, 255, 0.5);
+    }
+
+    .form-success {
+      padding: var(--space-4);
+      background: rgba(52, 211, 255, 0.1);
+      border: 1px solid rgba(52, 211, 255, 0.5);
+      border-radius: var(--radius-md);
+      color: var(--color-primary);
+      text-align: center;
+      display: none;
+    }
+
+    footer {
+      max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4) var(--space-4);
+      font-size: var(--text-xs); color: var(--color-text-muted); display: flex; justify-content: space-between;
+      gap: var(--space-4); border-top: 1px solid rgba(147,160,184,.35); margin-top: var(--space-12);
+    }
+    .footer-links { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      .page-shell { padding-inline: var(--space-4); }
+      header, footer { flex-direction: column; align-items: flex-start; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .page-shell { padding-inline: var(--space-3); }
+      .nav-links { gap: var(--space-2); }
+      .nav-link { font-size: var(--text-xs); padding: var(--space-2); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-type-title">Shayne Oliveira</div>
+          <div class="logo-type-subtitle">Digital Marketing</div>
+        </div>
+      </a>
+    </div>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/" class="nav-link">Overview</a>
+      <a href="marketing.html" class="nav-link">Marketing</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="webdev.html" class="nav-link">Web Dev</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <h1 class="page-title">Get In Touch</h1>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        
+        <div class="contact-method">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">
+            <a href="mailto:shayne@example.com">shayne.oliveira@email.com</a>
+          </div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-2);">
+            Best way to reach me for inquiries and project discussions. I typically respond within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Toronto, Canada</div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-2);">
+            Based in Canada but available for North American projects and consultations.
+          </p>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-label">Services</div>
+          <div style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-2); line-height: 1.8;">
+            <p>• Social Media Strategy & Management</p>
+            <p>• SEO Optimization & Consulting</p>
+            <p>• Content Creation & Marketing</p>
+            <p>• Digital Campaign Management</p>
+            <p>• Analytics & Performance Reporting</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-label">Availability</div>
+          <div class="contact-value" style="font-size: var(--text-base);">Available for freelance projects</div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-2);">
+            Open to short-term projects, long-term retainers, and consulting engagements.
+          </p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" aria-label="Contact form">
+        <h2 style="font-family: 'Instrument Serif', serif; font-size: var(--text-xl); color: var(--color-primary); margin-bottom: var(--space-4);">Send me a message</h2>
+
+        <div class="form-success" id="formSuccess">
+          Thank you for reaching out! I'll get back to you as soon as possible.
+        </div>
+
+        <div class="form-group">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-input" placeholder="What is this about?" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" class="form-textarea" placeholder="Tell me more about your project or inquiry..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div>&copy; 2024 Shayne Oliveira | Digital Marketing Specialist & SEO Consultant. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="marketing.html">Marketing</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Set active nav link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      const href = link.getAttribute('href');
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      if ((href === '/' && (currentPage === '' || currentPage === 'index.html')) || href === currentPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+
+    // Handle form submission
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show success message
+        formSuccess.style.display = 'block';
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          formSuccess.style.display = 'none';
+        }, 5000);
+      });
+    }
+  </script>
+</body>
+</html>

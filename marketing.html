@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Social Media Marketing & SEO Services | Strategic campaigns, content creation, and audience engagement that drive measurable results and brand growth." />
+  <meta name="keywords" content="social media marketing, SEO services, content marketing strategy, digital campaigns, social media management, Facebook marketing, Instagram marketing, LinkedIn strategy" />
+  <meta name="author" content="Shayne Oliveira" />
+  <meta property="og:title" content="Marketing Services | Social Media & SEO Strategy | Shayne Oliveira" />
+  <meta property="og:description" content="Professional marketing services specializing in social media strategy, SEO optimization, and targeted digital campaigns." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://user-ux-lab.github.io/Html-portfolio/marketing.html" />
+  <title>Marketing Services | Social Media & SEO | Shayne Oliveira</title>
+  <link rel="canonical" href="https://user-ux-lab.github.io/Html-portfolio/marketing.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+
+      --color-bg: #05070b;
+      --color-surface: #0c1017;
+      --color-surface-2: #151b25;
+      --color-border: #293244;
+      --color-text: #e3ecff;
+      --color-text-muted: #92a0b8;
+      --color-primary: #34d3ff;
+      --color-primary-hover: #1ca7d1;
+      --color-primary-soft: rgba(52, 211, 255, 0.15);
+      --color-purple: #280137;
+      --color-purple-soft: rgba(40, 1, 55, 0.3);
+
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.55);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { text-size-adjust: none; scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      font-family: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: var(--text-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: radial-gradient(circle at top left, #202a3b 0, #280137 40%, #05070b 80%, #020308 100%);
+    }
+
+    a, button { font: inherit; color: inherit; text-decoration: none; border: none; background: none; cursor: pointer; transition: 160ms ease; }
+
+    header {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: var(--space-4) var(--space-4) 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo { display: flex; align-items: center; gap: var(--space-3); }
+    .logo a { display: flex; align-items: center; gap: var(--space-3); color: inherit; text-decoration: none; }
+    .logo-mark {
+      width: 32px; height: 32px; border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+      box-shadow: 0 0 20px rgba(52, 211, 255, 0.3);
+    }
+    .logo-type-title { font-weight: 600; font-size: var(--text-lg); letter-spacing: -0.02em; }
+    .logo-type-subtitle { font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    .nav-links { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+    .nav-link {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-md);
+      transition: all 160ms ease;
+    }
+    .nav-link:hover { color: var(--color-primary); }
+    .nav-link.active { color: var(--color-primary); background: var(--color-primary-soft); }
+
+    .page-shell { max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4); }
+
+    .page-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-6);
+    }
+
+    .section { margin-bottom: var(--space-12); }
+    .section-header { margin-bottom: var(--space-6); }
+    .section-header h2 {
+      font-family: 'Instrument Serif', serif;
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-3);
+      color: var(--color-primary);
+    }
+    .section-header p { color: var(--color-text-muted); line-height: 1.8; }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-6);
+    }
+
+    .card {
+      padding: var(--space-6);
+      background: rgba(12, 16, 23, 0.4);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      transition: all 160ms ease;
+    }
+    .card:hover {
+      border-color: var(--color-primary);
+      background: rgba(52, 211, 255, 0.05);
+      transform: translateY(-2px);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--color-primary-soft);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: var(--space-4);
+    }
+
+    .card-title { font-weight: 600; font-size: var(--text-lg); margin-bottom: var(--space-3); }
+    .card-description { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; }
+
+    .cta-section {
+      padding: var(--space-8);
+      background: radial-gradient(circle at right, rgba(52, 211, 255, 0.15) 0%, transparent 70%);
+      border: 1px solid rgba(52, 211, 255, 0.2);
+      border-radius: var(--radius-lg);
+      text-align: center;
+    }
+
+    .cta-section h3 { font-size: var(--text-xl); margin-bottom: var(--space-4); }
+    .cta-section p { color: var(--color-text-muted); margin-bottom: var(--space-6); }
+
+    .btn-primary {
+      padding: 0.75rem 1.5rem;
+      background: var(--color-primary);
+      color: var(--color-bg);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      box-shadow: 0 0 20px rgba(52, 211, 255, 0.3);
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--color-primary-hover); box-shadow: 0 0 30px rgba(52, 211, 255, 0.5); }
+
+    footer {
+      max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4) var(--space-4);
+      font-size: var(--text-xs); color: var(--color-text-muted); display: flex; justify-content: space-between;
+      gap: var(--space-4); border-top: 1px solid rgba(147,160,184,.35); margin-top: var(--space-12);
+    }
+    .footer-links { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      .page-shell { padding-inline: var(--space-4); }
+      header, footer { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 600px) {
+      .page-shell { padding-inline: var(--space-3); }
+      .nav-links { gap: var(--space-2); }
+      .nav-link { font-size: var(--text-xs); padding: var(--space-2); }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-type-title">Shayne Oliveira</div>
+          <div class="logo-type-subtitle">Digital Marketing</div>
+        </div>
+      </a>
+    </div>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/" class="nav-link">Overview</a>
+      <a href="marketing.html" class="nav-link active">Marketing</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="webdev.html" class="nav-link">Web Dev</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <h1 class="page-title">Marketing Services</h1>
+
+    <section class="section" aria-labelledby="services-title">
+      <div class="section-header">
+        <h2 id="services-title">Comprehensive Marketing Solutions</h2>
+        <p>Tailored digital marketing strategies designed to elevate your brand, engage your audience, and drive sustainable growth. From social media management to SEO optimization, I deliver measurable results.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3 class="card-title">Social Media Strategy</h3>
+          <p class="card-description">Strategic content planning, community engagement, and platform optimization across Instagram, TikTok, Facebook, and LinkedIn to build loyal audiences.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔍</div>
+          <h3 class="card-title">SEO Optimization</h3>
+          <p class="card-description">On-page and technical SEO, keyword research, link building, and analytics to improve organic visibility and drive qualified traffic to your website.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">✍️</div>
+          <h3 class="card-title">Content Creation</h3>
+          <p class="card-description">Engaging, high-quality content tailored to your brand voice and audience. Blog posts, social media copy, video scripts, and more that convert.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">Analytics & Reporting</h3>
+          <p class="card-description">Data-driven insights using Google Analytics, social analytics, and custom reporting to measure campaign performance and optimize strategy.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">Digital Campaigns</h3>
+          <p class="card-description">Integrated marketing campaigns across channels including paid social, email marketing, and influencer partnerships to maximize ROI.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💡</div>
+          <h3 class="card-title">Marketing Consulting</h3>
+          <p class="card-description">Strategic guidance on brand positioning, competitive analysis, market trends, and growth opportunities tailored to your business goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <h3 id="cta-title">Ready to Grow Your Brand?</h3>
+      <p>Let's discuss how strategic digital marketing can transform your online presence and drive business results.</p>
+      <a href="contact.html" class="btn-primary">Get in Touch</a>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div>&copy; 2024 Shayne Oliveira | Digital Marketing Specialist & SEO Consultant. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="marketing.html">Marketing</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      const href = link.getAttribute('href');
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      if ((href === '/' && (currentPage === '' || currentPage === 'index.html')) || href === currentPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
