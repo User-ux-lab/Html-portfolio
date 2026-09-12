@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Resume & Professional Experience | Digital Marketing Specialist with expertise in SEO, social media management, and content strategy. View full work history and certifications." />
-  <meta name="keywords" content="digital marketing resume, professional experience, SEO specialist, social media manager, content strategy, marketing certifications, Google Analytics" />
+  <meta name="description" content="Shayne Oliveira's resume: Marketing Specialist with experience in digital marketing, social media consulting, conversion tracking, e-commerce, SEO, email, and content creation." />
+  <meta name="keywords" content="Shayne Oliveira resume, Marketing Specialist, digital marketing, social media consultant, conversion tracking, e-commerce specialist, SEO, email marketing, content creation" />
   <meta name="author" content="Shayne Oliveira" />
-  <meta property="og:title" content="Professional Resume | Experience & Certifications | Shayne Oliveira" />
-  <meta property="og:description" content="Detailed professional background in digital marketing, social media strategy, SEO optimization, and content creation." />
+  <meta property="og:title" content="Shayne Oliveira | Marketing Specialist Resume" />
+  <meta property="og:description" content="Professional experience, core skills, education, certifications, volunteer work, and awards." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://user-ux-lab.github.io/Html-portfolio/resume.html" />
-  <title>Resume & Experience | Digital Marketing Professional | Shayne Oliveira</title>
+  <title>Shayne Oliveira | Marketing Specialist Resume</title>
   <link rel="canonical" href="https://user-ux-lab.github.io/Html-portfolio/resume.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -113,6 +113,51 @@
       margin-bottom: var(--space-6);
     }
 
+    .resume-header {
+      padding: var(--space-6);
+      margin-bottom: var(--space-8);
+      background: rgba(12, 16, 23, 0.4);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+    }
+
+    .resume-name {
+      font-family: 'Instrument Serif', serif;
+      font-size: var(--text-2xl);
+      color: var(--color-primary);
+      margin-bottom: var(--space-2);
+    }
+
+    .resume-role {
+      font-size: var(--text-lg);
+      font-weight: 600;
+      margin-bottom: var(--space-4);
+    }
+
+    .resume-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2) var(--space-6);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+
+    .resume-contact a { color: var(--color-primary); }
+    .resume-contact a:hover { text-decoration: underline; }
+
+    .summary {
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      max-width: 900px;
+    }
+
+    .two-column-list {
+      columns: 2;
+      column-gap: var(--space-8);
+    }
+
+    .two-column-list li { break-inside: avoid; }
+
     .section { margin-bottom: var(--space-12); }
     .section-title {
       font-family: 'Instrument Serif', serif;
@@ -201,6 +246,7 @@
       .page-shell { padding-inline: var(--space-3); }
       .nav-links { gap: var(--space-2); }
       .nav-link { font-size: var(--text-xs); padding: var(--space-2); }
+      .two-column-list { columns: 1; }
     }
   </style>
 </head>
@@ -226,125 +272,153 @@
   </header>
 
   <main class="page-shell">
-    <h1 class="page-title">Professional Experience</h1>
+    <div class="resume-header">
+      <h1 class="resume-name">Shayne Oliveira</h1>
+      <div class="resume-role">Marketing Specialist</div>
+      <div class="resume-contact">
+        <span>Mississauga, ON, L5A 3X3, Canada</span>
+        <a href="mailto:Shayneoliveira123@gmail.com">Shayneoliveira123@gmail.com</a>
+        <a href="tel:+16472105760">647-210-5760</a>
+        <a href="https://www.linkedin.com/in/shayne-oliveira" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary">Results-oriented Marketing Specialist proficient in developing creative marketing collateral for diverse projects. Establishes clear standards and enforces protocols for consistent, high-quality results.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Core Skills</h2>
+      <div class="skill-pills">
+        <span class="skill-pill">Copywriting &amp; Content Creation</span>
+        <span class="skill-pill">Email &amp; SMS Marketing</span>
+        <span class="skill-pill">Website Management</span>
+        <span class="skill-pill">Digital Marketing Strategy</span>
+        <span class="skill-pill">Creative Development</span>
+        <span class="skill-pill">Analytics &amp; Reporting</span>
+        <span class="skill-pill">Shopify</span>
+        <span class="skill-pill">SEO</span>
+        <span class="skill-pill">Social Media Platforms</span>
+      </div>
+      <p class="job-description">Copywriting and content creation for ads, email, social, and SEO; email and SMS automation, segmentation, and A/B testing; Shopify updates and product detail page optimization; competitor analysis, campaign planning, and launches; ad visuals, graphics, and multimedia content; KPI tracking, Google Analytics, and campaign insights.</p>
+    </section>
 
     <section class="section">
       <h2 class="section-title">Work Experience</h2>
 
       <div class="experience-item">
-        <div class="job-header">
-          <div>
-            <div class="job-title">Marketing Specialist</div>
-            <div class="job-company">Digital Marketing Agency</div>
-          </div>
-          <div class="job-date">2021 - Present</div>
-        </div>
-        <p class="job-description">Lead digital marketing campaigns and social media strategies for diverse client portfolio. Manage social media accounts, develop content strategies, and optimize SEO performance to drive organic growth and engagement.</p>
+        <div class="job-header"><div><div class="job-title">Social Media Consultant and Digital Marketing Advisor</div><div class="job-company">Freelance</div></div><div class="job-date">May 2025 – Present</div></div>
         <ul class="job-responsibilities">
-          <li>Developed and executed comprehensive social media strategies across Instagram, TikTok, Facebook, and LinkedIn</li>
-          <li>Created high-performing content calendar and managed daily social media operations</li>
-          <li>Optimized website SEO and improved organic traffic by 40%+ through keyword research and on-page optimization</li>
-          <li>Managed paid social campaigns with average ROI of 3.5x</li>
-          <li>Analyzed performance metrics using Google Analytics and created monthly reporting dashboards</li>
+          <li>Advise on social media and digital marketing activities, including campaign planning, content development, and performance improvement.</li>
+          <li>Audit digital marketing measurement setups and translate technical findings into clear, practical recommendations for stakeholders.</li>
         </ul>
       </div>
 
       <div class="experience-item">
-        <div class="job-header">
-          <div>
-            <div class="job-title">Social Media Manager</div>
-            <div class="job-company">E-commerce Brand</div>
-          </div>
-          <div class="job-date">2019 - 2021</div>
-        </div>
-        <p class="job-description">Managed all social media channels and community engagement for fast-growing e-commerce brand. Created viral content, managed influencer partnerships, and drove customer acquisition through social channels.</p>
+        <div class="job-header"><div><div class="job-title">Digital Marketing / Conversion Tracking Project</div><div class="job-company">Stop Abuse Campaign</div></div><div class="job-date">Project-based</div></div>
         <ul class="job-responsibilities">
-          <li>Grew Instagram following from 5K to 50K+ through strategic content and engagement</li>
-          <li>Executed TikTok strategy resulting in 2M+ views and 100K+ followers</li>
-          <li>Managed influencer partnerships and brand collaborations</li>
-          <li>Optimized product listings and created SEO-friendly descriptions</li>
-          <li>Achieved 15% average engagement rate across all platforms</li>
+          <li>Audited a nonprofit’s GA4 and Google Ads conversion-tracking setup after the Google Ad Grants account recorded zero conversions despite historical traffic and ad spend.</li>
+          <li>Diagnosed tracking requirements for a temporary website and scoped a low-effort implementation aligned with the organization’s immediate Ad Grants reactivation needs.</li>
+          <li>Defined “ACE test completed” as the primary conversion action and planned consistent tracking across all landing pages.</li>
+          <li>Prepared a verification process using a live test conversion and documented the issue, corrective changes, ongoing validation steps, and future tracking considerations for donations and email sign-ups.</li>
+          <li>Assessed campaign and technical context, including historical CTR differences, Maximize Conversions bidding without conversion history, and HTTP delivery as a potential tracking risk.</li>
         </ul>
       </div>
 
       <div class="experience-item">
-        <div class="job-header">
-          <div>
-            <div class="job-title">Content Creator & Marketing Consultant</div>
-            <div class="job-company">Freelance</div>
-          </div>
-          <div class="job-date">2018 - Present</div>
-        </div>
-        <p class="job-description">Independent contractor providing marketing consulting, content creation, and social media management services to startups and small businesses.</p>
+        <div class="job-header"><div><div class="job-title">E-commerce Specialist and Warehouse Associate</div><div class="job-company">Big boys with cool toys, Mississauga, ON</div></div><div class="job-date">August 2025 – March 2026</div></div>
+        <p class="job-description">Seamless end-to-end customer experience by combining strong digital skills with hands-on operational support.</p>
         <ul class="job-responsibilities">
-          <li>Developed marketing strategies and social media roadmaps for 20+ clients</li>
-          <li>Created engaging video content, graphics, and copy for multiple industries</li>
-          <li>Conducted SEO audits and implemented optimization recommendations</li>
-          <li>Managed paid advertising campaigns across Facebook, Instagram, and Google</li>
+          <li>Oversee daily e-commerce operations and warehouse activities to ensure accurate product listings, smooth order processing, and timely fulfillment.</li>
+          <li>Manage online inventory updates, customer inquiries, and digital storefront tasks while coordinating closely with warehouse teams.</li>
+          <li>Perform picking, packing, receiving, and organizing stock to maintain efficient workflow and meet shipping deadlines.</li>
         </ul>
       </div>
+
+      <div class="experience-item">
+        <div class="job-header"><div><div class="job-title">Merchandising Processing Team Member</div><div class="job-company">Talize, Mississauga, ON</div></div><div class="job-date">May 2024 – February 2025</div></div>
+        <ul class="job-responsibilities">
+          <li>Processed incoming donations by sorting, tagging, and preparing items for the sales floor.</li>
+          <li>Ensured merchandise met quality standards and followed Talize pricing guidelines.</li>
+          <li>Organized and replenished product racks, shelves, and displays to maintain store presentation.</li>
+          <li>Supported back-of-house workflow by keeping processing areas clean and efficient.</li>
+          <li>Facilitated inventory rotation to keep merchandise fresh and aligned with store needs.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header"><div><div class="job-title">Digital Marketing Intern</div><div class="job-company">AppmaxCare, Mississauga, ON</div></div><div class="job-date">January 2024 – April 2024</div></div>
+        <ul class="job-responsibilities">
+          <li>Wrote and optimized website, email, and ad copy using SEO best practices to improve engagement and search visibility.</li>
+          <li>Collaborated on creative assets, including ad visuals, graphics, and multimedia content, for paid and organic campaigns across social media and email.</li>
+          <li>Tracked KPIs and built performance reports using Google Analytics and platform insights to recommend data-driven improvements.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header"><div><div class="job-title">Home Theater Advisor</div><div class="job-company">Best Buy, Toronto, ON</div></div><div class="job-date">September 2022 – January 2023</div></div>
+        <ul class="job-responsibilities">
+          <li>Assisted customers in selecting TVs, audio systems, and smart-home products based on their needs.</li>
+          <li>Explained product features, compatibility, and setup options in a clear, customer-friendly way.</li>
+          <li>Performed product demos to showcase sound quality, display performance, and connectivity.</li>
+          <li>Supported merchandising by organizing displays and ensuring products were properly tagged.</li>
+          <li>Processed sales, service plans, and returns while maintaining Best Buy service standards.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header"><div><div class="job-title">Sales Associate</div><div class="job-company">Levi’s, Toronto, ON</div></div><div class="job-date">January 2020 – December 2022</div></div>
+        <ul class="job-responsibilities">
+          <li>Assisted customers with fit, style, and product recommendations.</li>
+          <li>Maintained strong knowledge of Levi’s denim, promotions, and new arrivals.</li>
+          <li>Processed purchases, returns, and exchanges accurately.</li>
+          <li>Supported merchandising, restocking, and maintaining a clean sales floor.</li>
+          <li>Helped achieve sales goals through active engagement and upselling.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Hands-on Marketing Experience</h2>
+      <ul class="job-responsibilities two-column-list">
+        <li>Google AdWords campaign for Sheridan.</li>
+        <li>Built advertising campaigns for Lager Shed Brewery.</li>
+        <li>Social media campaign for a startup for caretakers.</li>
+      </ul>
     </section>
 
     <section class="section">
       <h2 class="section-title">Education</h2>
-
       <div class="experience-item">
-        <div class="job-header">
-          <div>
-            <div class="job-title">Bachelor of Commerce</div>
-            <div class="job-company">University</div>
-          </div>
-          <div class="job-date">Graduated 2018</div>
-        </div>
-        <p class="job-description">Focus on Business Administration and Marketing. Completed coursework in consumer behavior, market research, and digital communications.</p>
+        <div class="job-title">Advanced Diploma, Advertising &amp; Marketing Communications</div>
+        <div class="job-company">Sheridan College – Pilon School of Business Management</div>
       </div>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Certifications & Training</h2>
-
-      <div class="certification">
-        <div class="certification-name">Google Analytics Certified Professional</div>
-        <div class="certification-issuer">Google Academy for Ads</div>
-      </div>
-
-      <div class="certification">
-        <div class="certification-name">HubSpot Inbound Marketing Certification</div>
-        <div class="certification-issuer">HubSpot Academy</div>
-      </div>
-
-      <div class="certification">
-        <div class="certification-name">Meta Social Media Marketing Professional Certificate</div>
-        <div class="certification-issuer">Meta Blueprint</div>
-      </div>
-
-      <div class="certification">
-        <div class="certification-name">SEMrush SEO Fundamentals Certification</div>
-        <div class="certification-issuer">SEMrush Academy</div>
-      </div>
-
-      <div class="certification">
-        <div class="certification-name">Content Marketing Institute Certification</div>
-        <div class="certification-issuer">Content Marketing Institute</div>
-      </div>
+      <h2 class="section-title">Certificates</h2>
+      <div class="certification"><div class="certification-name">Hootsuite Platform Certification</div></div>
+      <div class="certification"><div class="certification-name">Hootsuite Social Media Marketing Certification</div></div>
+      <div class="certification"><div class="certification-name">Google Analytics Certification</div></div>
+      <div class="certification"><div class="certification-name">HubSpot Academy Content Marketing Certification</div></div>
+      <div class="certification"><div class="certification-name">Google AI-Powered Performance Ads Certification</div></div>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Core Skills & Expertise</h2>
-      <div class="skill-pills">
-        <span class="skill-pill">Social Media Strategy</span>
-        <span class="skill-pill">SEO Optimization</span>
-        <span class="skill-pill">Content Creation</span>
-        <span class="skill-pill">Google Analytics</span>
-        <span class="skill-pill">Paid Advertising</span>
-        <span class="skill-pill">Copywriting</span>
-        <span class="skill-pill">Video Production</span>
-        <span class="skill-pill">Email Marketing</span>
-        <span class="skill-pill">Brand Strategy</span>
-        <span class="skill-pill">Data Analysis</span>
-        <span class="skill-pill">Influencer Marketing</span>
-        <span class="skill-pill">Community Management</span>
-      </div>
+      <h2 class="section-title">Volunteer</h2>
+      <div class="experience-item"><div class="job-title">Avro Arrow Squadron</div><ul class="job-responsibilities"><li>Poppy sales at the Remembrance Day parade.</li></ul></div>
+      <div class="experience-item"><div class="job-title">Scouts Canada</div><ul class="job-responsibilities"><li>Christmas trees, apples, and popcorn drives.</li><li>Swim Life Program.</li></ul></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Awards</h2>
+      <ul class="job-responsibilities"><li>Glenforest Secondary School, Mississauga, ON – Recipient of Gryphon Pride Award, January 2020.</li><li>Swimming: Bronze Cross and Medallion.</li></ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Interests</h2>
+      <div class="skill-pills"><span class="skill-pill">E-commerce</span><span class="skill-pill">Video Editing</span><span class="skill-pill">Gym</span><span class="skill-pill">Cooking</span></div>
     </section>
   </main>
 
@@ -372,3 +446,4 @@
   </script>
 </body>
 </html>
+
