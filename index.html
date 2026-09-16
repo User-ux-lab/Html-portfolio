@@ -44,11 +44,12 @@
       --color-border: #293244;
       --color-text: #e3ecff;
       --color-text-muted: #92a0b8;
-      --color-primary: #34d3ff;
-      --color-primary-hover: #1ca7d1;
-      --color-primary-soft: rgba(52, 211, 255, 0.15);
-      --color-purple: #280137;
-      --color-purple-soft: rgba(40, 1, 55, 0.3);
+      --color-primary: #4ec9ff;
+      --color-primary-hover: #2faee6;
+      --color-primary-soft: rgba(78, 201, 255, 0.15);
+      --color-purple: #34154a;
+      --color-purple-soft: rgba(52, 21, 74, 0.38);
+      --color-gold: #f2c46d;
 
       --radius-sm: 0.375rem;
       --radius-md: 0.5rem;
@@ -241,6 +242,63 @@
       color: var(--color-primary);
     }
 
+    .recommendation {
+      margin-top: var(--space-12);
+      background: linear-gradient(135deg, rgba(52, 21, 74, 0.55), rgba(12, 16, 23, 0.9));
+      border: 1px solid rgba(78, 201, 255, 0.28);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-md);
+    }
+
+    .recommendation-header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-5);
+    }
+
+    .recommendation-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #dbe7ff 0%, #8db7ff 25%, #f2c46d 100%);
+      color: #081018;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+      border: 2px solid rgba(255,255,255,0.15);
+      box-shadow: 0 0 18px rgba(78,201,255,0.2);
+    }
+
+    .recommendation-person {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+
+    .recommendation-name {
+      font-weight: 700;
+      font-size: var(--text-lg);
+    }
+
+    .recommendation-role {
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+
+    .recommendation-body {
+      color: var(--color-text);
+      font-size: clamp(1rem, 0.95rem + 0.5vw, 1.2rem);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .recommendation-body strong {
+      color: var(--color-primary);
+    }
+
     footer {
       max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4) var(--space-4);
       font-size: var(--text-xs); color: var(--color-text-muted); display: flex; justify-content: space-between;
@@ -318,6 +376,22 @@
           <span class="pill">Campaign Management</span>
         </div>
       </div>
+    </section>
+
+    <section class="recommendation" aria-labelledby="recommendation-title">
+      <div class="recommendation-header">
+        <div class="recommendation-avatar" aria-hidden="true">AW</div>
+        <div class="recommendation-person">
+          <div class="recommendation-name">Andrew Willis</div>
+          <div class="recommendation-role">Protecting children from Adverse Childhood Experiences</div>
+          <div class="recommendation-role">August 19, 2026 · Andrew was Shayne's client</div>
+        </div>
+      </div>
+      <p class="recommendation-body">
+        Shayne swiftly assessed our needs, diagnosed the issues, and implemented a fix. He has strong skills in
+        <strong>Google Ads, GA4</strong>, and <strong>conversion tracking</strong>. Shayne communicates clearly and kept us briefed throughout the project.
+        He's dependable and a strong asset for a digital marketing/analytics role.
+      </p>
     </section>
   </main>
 
