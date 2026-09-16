@@ -249,6 +249,17 @@
       border-radius: var(--radius-lg);
       padding: var(--space-8);
       box-shadow: var(--shadow-md);
+      display: block;
+      color: inherit;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .recommendation:hover,
+    .recommendation:focus-visible {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 28px rgba(78, 201, 255, 0.18);
+      transform: translateY(-2px);
+      outline: none;
     }
 
     .recommendation-header {
@@ -382,7 +393,7 @@
       </div>
     </section>
 
-    <section class="recommendation" aria-labelledby="recommendation-title">
+    <a class="recommendation" href="https://stopabusecampaign.org/stop-abuse-campaign-board/andrew-willis/" target="_blank" rel="noopener noreferrer" aria-label="Read Andrew Willis's recommendation on the Stop Abuse Campaign website">
       <div class="recommendation-header">
         <div class="recommendation-avatar" aria-hidden="true">
           <img src="assets/images/andrew-j.s.-willis.webp" alt="Andrew Willis portrait" />
@@ -398,7 +409,7 @@
         <strong>Google Ads, GA4</strong>, and <strong>conversion tracking</strong>. Shayne communicates clearly and kept us briefed throughout the project.
         He’s dependable and a strong asset for a digital marketing and analytics role.
       </p>
-    </section>
+    </a>
   </main>
 
   <footer role="contentinfo">
