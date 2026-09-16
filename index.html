@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -314,6 +314,21 @@
       color: var(--color-primary);
     }
 
+    .recommendation-rating {
+      color: var(--color-gold);
+      font-size: var(--text-sm);
+      letter-spacing: 0.16em;
+      margin: var(--space-4) 0 var(--space-3);
+    }
+
+    .recommendation-label {
+      color: var(--color-text-muted);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: var(--space-4);
+    }
+
     footer {
       max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4) var(--space-4);
       font-size: var(--text-xs); color: var(--color-text-muted); display: flex; justify-content: space-between;
@@ -352,6 +367,7 @@
       <a href="resume.html" class="nav-link">Resume</a>
       <a href="webdev.html" class="nav-link">Web Dev</a>
       <a href="about.html" class="nav-link">About</a>
+      <a href="testimonials.html" class="nav-link">Testimonials</a>
       <a href="contact.html" class="nav-link">Contact</a>
     </nav>
   </header>
@@ -359,7 +375,7 @@
   <main class="page-shell">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-text">
-        <p class="highlight">Digital Marketing · Social Media · SEO</p>
+        <p class="highlight">Digital Marketing Â· Social Media Â· SEO</p>
         <h1 id="hero-title">Results-driven marketing specialist building brand presence and driving growth.</h1>
         <p class="tagline">Expert in social media strategy, SEO optimization, and digital campaigns that engage audiences and deliver measurable results.</p>
         <div class="hero-actions">
@@ -394,6 +410,7 @@
     </section>
 
     <a class="recommendation" href="https://stopabusecampaign.org/stop-abuse-campaign-board/andrew-willis/" target="_blank" rel="noopener noreferrer" aria-label="Read Andrew Willis's recommendation on the Stop Abuse Campaign website">
+      <div class="recommendation-label">Client recommendation</div>
       <div class="recommendation-header">
         <div class="recommendation-avatar" aria-hidden="true">
           <img src="assets/images/andrew-j.s.-willis.webp" alt="Andrew Willis portrait" />
@@ -401,13 +418,14 @@
         <div class="recommendation-person">
           <div class="recommendation-name">Andrew Willis</div>
           <div class="recommendation-role">Stop Abuse Campaign</div>
-          <div class="recommendation-role">August 19, 2026 · Client recommendation</div>
+          <div class="recommendation-role">August 19, 2026 Â· Client recommendation</div>
         </div>
       </div>
+      <div class="recommendation-rating" aria-label="5 out of 5 stars">â˜…â˜…â˜…â˜…â˜…</div>
       <p class="recommendation-body">
         Shayne swiftly assessed our needs, diagnosed the issues, and implemented a fix. He has strong skills in
         <strong>Google Ads, GA4</strong>, and <strong>conversion tracking</strong>. Shayne communicates clearly and kept us briefed throughout the project.
-        He’s dependable and a strong asset for a digital marketing and analytics role.
+        Heâ€™s dependable and a strong asset for a digital marketing and analytics role.
       </p>
     </a>
   </main>
@@ -437,3 +455,5 @@
   </script>
 </body>
 </html>
+
+
