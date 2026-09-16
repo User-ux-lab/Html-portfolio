@@ -259,17 +259,21 @@
     }
 
     .recommendation-avatar {
-      width: 56px;
-      height: 56px;
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #dbe7ff 0%, #8db7ff 25%, #f2c46d 100%);
-      color: #081018;
-      font-weight: 700;
-      display: grid;
-      place-items: center;
-      font-size: 1.1rem;
+      overflow: hidden;
       border: 2px solid rgba(255,255,255,0.15);
       box-shadow: 0 0 18px rgba(78,201,255,0.2);
+      background: #0f172a;
+      flex-shrink: 0;
+    }
+
+    .recommendation-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .recommendation-person {
@@ -380,17 +384,19 @@
 
     <section class="recommendation" aria-labelledby="recommendation-title">
       <div class="recommendation-header">
-        <div class="recommendation-avatar" aria-hidden="true">AW</div>
+        <div class="recommendation-avatar" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Andrew Willis portrait" />
+        </div>
         <div class="recommendation-person">
           <div class="recommendation-name">Andrew Willis</div>
-          <div class="recommendation-role">Protecting children from Adverse Childhood Experiences</div>
-          <div class="recommendation-role">August 19, 2026 · Andrew was Shayne's client</div>
+          <div class="recommendation-role">Stop Abuse Campaign</div>
+          <div class="recommendation-role">August 19, 2026 · Client recommendation</div>
         </div>
       </div>
       <p class="recommendation-body">
         Shayne swiftly assessed our needs, diagnosed the issues, and implemented a fix. He has strong skills in
         <strong>Google Ads, GA4</strong>, and <strong>conversion tracking</strong>. Shayne communicates clearly and kept us briefed throughout the project.
-        He's dependable and a strong asset for a digital marketing/analytics role.
+        He’s dependable and a strong asset for a digital marketing and analytics role.
       </p>
     </section>
   </main>
